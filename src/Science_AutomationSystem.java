@@ -29,8 +29,7 @@ public class Science_AutomationSystem {
 	  
 	  // HashFile EquiptmentHash = new HashFile (EquiptmentTable, 100, new equiptment());
 	  
-	  // test change for master
-   }
+}
 
 
    public void quit() {
