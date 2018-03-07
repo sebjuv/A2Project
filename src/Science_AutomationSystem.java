@@ -3,21 +3,27 @@
 import java.awt.*;
 import park.*;
 import javax.swing.*;
+import java.util.Scanner;
+
 
 public class Science_AutomationSystem {
 
    //  CLASS VARIABLES
    PC_Style science_AutomationStyle = new PC_Style();//  holds the style for the user interface
  public static int itemnumber; 
+ public static boolean checkchemicals;
  
  
-
+ 
+ 
    //  CLASS METHODS
 
    Science_AutomationSystem() {
       setStyle(science_AutomationStyle);
       JFrame frame = new JFrame();
       frame.setTitle("Welcome");
+      frame.setSize(500, 500);
+      
       
       PC_Table EquiptmentTable = new PC_Table("Equiptment", 100, "Product Code, Description, Quantity, Cupboard, Room", "Confirm" );
 	  
@@ -25,7 +31,7 @@ public class Science_AutomationSystem {
 	  
 	//  HashFile ChemicalHash = new HashFile (ChemicalsTable,100, new chemical() );
 	  
-	// HashFile EquiptmentHash = new HashFile (EquiptmentTable, 100, new equiptment());
+	// HashFile EquipmentHash = new HashFile (EquiptmentTable, 100, new equipment());
 	  
 	  
    }
@@ -48,7 +54,7 @@ public class Science_AutomationSystem {
 
    public void addItem() {
 
-	   
+	   EquiptmentTable 
 	   
    }//  end of method
 
@@ -64,6 +70,11 @@ public class Science_AutomationSystem {
    public void requestItem() {
 	   PC_Dialog RequestItem = new PC_Dialog ("Item Quantity", "Date for Use, Period for Use", "Confirm , Cancel");
 	   RequestItem.choice();
+	   boolean Confirm = false;
+	   
+	   
+	   
+	   
 	   
 	   
 	   
