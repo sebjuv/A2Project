@@ -16,7 +16,7 @@ public class Science_AutomationSystem {
  // checking home
  
  // another check
- 
+ // checkc
    //  CLASS METHODS
 
    Science_AutomationSystem() {
