@@ -13,8 +13,9 @@ public class Science_AutomationSystem {
  public static int itemnumber; 
  public static boolean checkchemicals;
  
+ // checking home
  
- 
+ // another check
  
    //  CLASS METHODS
 

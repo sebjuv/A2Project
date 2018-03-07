@@ -1,7 +1,7 @@
 // class Science_AutomationMenu - Shell created by MenuMaker on Wed Jan 17 13:35:30 GMT 2018 by 16Szuddas
 
 
-
+// checking home
 import java.awt.*;
 import park.*;
 import javax.swing.*;
