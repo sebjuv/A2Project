@@ -4,7 +4,6 @@ import java.awt.*;
 import park.*;
 import javax.swing.*;
 import java.util.Scanner;
-//test on mac
 
 public class Science_AutomationSystem {
 
@@ -13,10 +12,7 @@ public class Science_AutomationSystem {
  public static int itemnumber; 
  public static boolean checkchemicals;
  
- // checking home
- 
- // another check
- // checkc - 
+
    //  CLASS METHODS
 
    Science_AutomationSystem() {
