@@ -1,7 +1,6 @@
 // class Science_AutomationMenu - Shell created by MenuMaker on Wed Jan 17 13:35:30 GMT 2018 by 16Szuddas
 
 
-
 import java.awt.*;
 import park.*;
 import javax.swing.*;
@@ -14,17 +13,16 @@ public class Science_AutomationMenu {
    PC_Menu itemMenu = new PC_Menu("Item", "Add Item, Edit Item, Request Item, Search Item, Main Menu");
    PC_Menu adminMenu = new PC_Menu("Admin", "Item Hazard Report, pH Level, Available Stock, Main Menu");
 
-
    //  CLASS METHODS
-
    Science_AutomationMenu() {  //  constructor
       mainMenuMenu.setStyle(science_AutomationSystem.science_AutomationStyle);
       itemMenu.setStyle(science_AutomationSystem.science_AutomationStyle);
       adminMenu.setStyle(science_AutomationSystem.science_AutomationStyle);
-      
+    
    }
 
-   private void mainmenuRun(){
+   private void mainmenuRun(){   
+	   
       boolean finished = false;
       do {
          switch(mainMenuMenu.choice()){
@@ -38,10 +36,8 @@ public class Science_AutomationMenu {
                      science_AutomationSystem.quit();
                      break;
          } //  end of switch
-      } while(!finished);
-      
+      } while(!finished);  
    } 
-
 
    private void itemRun(){
       boolean finished = false;
@@ -85,8 +81,7 @@ public class Science_AutomationMenu {
                      break;
          } //  end of switch
       } while(!finished);
-   } 
-
+   }
 
    public static void main(String args[]) {
       Science_AutomationMenu science_AutomationMenu = new Science_AutomationMenu(); //  create an instance of the menu
