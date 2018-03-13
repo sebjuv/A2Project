@@ -1,6 +1,7 @@
 // class Science_AutomationSystem - Shell created by MenuMaker on Wed Jan 17 13:35:30 GMT 2018 by 16Szuddas
 
 import java.awt.*;
+import java.util.Arrays;
 import park.*;
 import javax.swing.*;
 import java.util.Scanner;
@@ -12,6 +13,12 @@ public class Science_AutomationSystem {
  public static int itemnumber; 
  public static boolean checkchemicals;
  
+String ChemicalFile = "datafile/Chemical.dat";
+String EquiptmentFile = "datafile/Equiptment.dat";
+
+HashFile ChemicalHash = new HashFile(ChemicalFile, 100, new Chemical()); // this needs to be seen to and resolved before further progress can be made!!
+
+ 
 
    //  CLASS METHODS
 
@@ -22,16 +29,26 @@ public class Science_AutomationSystem {
       frame.setSize(500, 500);
       
       
-      PC_Table EquiptmentTable = new PC_Table("Equiptment", 100, "Product Code, Description, Quantity, Cupboard, Room", "Confirm" );
+       
+	/* HashFile ChemicalHash = new HashFile (ChemicalsTable,100, new Chemical() );
 	  
-	  PC_Table ChemicalsTable = new PC_Table("Chemicals", 100, "Reference Code, Reactant, Quantity, Cupboard, Warning", "Confirm" );
-	  
-	//  HashFile ChemicalHash = new HashFile (ChemicalsTable,100, new chemical() );
-	  
-	// HashFile EquipmentHash = new HashFile (EquiptmentTable, 100, new equipment());
-	  
+	 HashFile EquipmentHash = new HashFile (EquiptmentTable, 100, new Equipment());
+	  */
 	  
    }
+   /*
+   public void Chemical () {
+	   Quotation 
+	   Chemical.input();
+	   ChemicalHash.store(Chemical); // This is what I've come up with as a method for resolving chemical in the hash file
+	  
+	  
+	   
+	   
+	   
+   }
+   
+   */ 
 
 
    public void quit() {
@@ -50,6 +67,15 @@ public class Science_AutomationSystem {
 
 
    public void addItem() {
+	   
+	   
+	   
+// maybe use joption pane to select either table and then each table has a lise of required fields, such as the ones listed below.	   
+	   PC_Table EquiptmentTable = new PC_Table("Equiptment", 100, "Product Code, Description, Quantity, Cupboard, Room", "Confirm" );
+	   PC_Table ChemicalsTable = new PC_Table("Chemicals", 100, "Reference Code, Reactant, Quantity, Cupboard, Warning", "Confirm" );
+		
+	   
+   }
 
 	 
 	   
