@@ -13,11 +13,11 @@ public class Science_AutomationSystem {
  public static int itemnumber; 
  public static boolean checkchemicals;
  
-String ChemicalFile = "datafile/Chemical.dat";
-String EquiptmentFile = "datafile/Equiptment.dat";
+String ChemicalFile = "Chemical/Chemical.dat";
+String EquipmentFile = "Equipmen/Equipment.dat";
 
 HashFile ChemicalHash = new HashFile(ChemicalFile, 100, new Chemical()); // this needs to be seen to and resolved before further progress can be made!!
-
+HashFile EquipmentHash = new HashFile(EquipmentFile, 100, new Equipment());
  
 
    //  CLASS METHODS
@@ -30,25 +30,10 @@ HashFile ChemicalHash = new HashFile(ChemicalFile, 100, new Chemical()); // this
       
       
        
-	/* HashFile ChemicalHash = new HashFile (ChemicalsTable,100, new Chemical() );
-	  
-	 HashFile EquipmentHash = new HashFile (EquiptmentTable, 100, new Equipment());
-	  */
+	
 	  
    }
-   /*
-   public void Chemical () {
-	   Quotation 
-	   Chemical.input();
-	   ChemicalHash.store(Chemical); // This is what I've come up with as a method for resolving chemical in the hash file
-	  
-	  
-	   
-	   
-	   
-   }
-   
-   */ 
+
 
 
    public void quit() {
@@ -71,6 +56,8 @@ HashFile ChemicalHash = new HashFile(ChemicalFile, 100, new Chemical()); // this
 	   
 	   
 // maybe use joption pane to select either table and then each table has a lise of required fields, such as the ones listed below.	   
+	   
+	   
 	   PC_Table EquiptmentTable = new PC_Table("Equiptment", 100, "Product Code, Description, Quantity, Cupboard, Room", "Confirm" );
 	   PC_Table ChemicalsTable = new PC_Table("Chemicals", 100, "Reference Code, Reactant, Quantity, Cupboard, Warning", "Confirm" );
 		
